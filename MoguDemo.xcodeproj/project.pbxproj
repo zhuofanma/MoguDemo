@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDBFC87C1DE5AA6000AEEEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFC87B1DE5AA6000AEEEBB /* AppDelegate.swift */; };
+		DDBFC87E1DE5AA6000AEEEBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFC87D1DE5AA6000AEEEBB /* ViewController.swift */; };
+		DDBFC8811DE5AA6000AEEEBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBFC87F1DE5AA6000AEEEBB /* Main.storyboard */; };
+		DDBFC8841DE5AA6000AEEEBB /* MoguDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDBFC8821DE5AA6000AEEEBB /* MoguDemo.xcdatamodeld */; };
+		DDBFC8861DE5AA6000AEEEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBFC8851DE5AA6000AEEEBB /* Assets.xcassets */; };
+		DDBFC8891DE5AA6000AEEEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBFC8871DE5AA6000AEEEBB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DDBFC8781DE5AA6000AEEEBB /* MoguDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoguDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDBFC87B1DE5AA6000AEEEBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDBFC87D1DE5AA6000AEEEBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDBFC8801DE5AA6000AEEEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDBFC8831DE5AA6000AEEEBB /* MoguDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoguDemo.xcdatamodel; sourceTree = "<group>"; };
+		DDBFC8851DE5AA6000AEEEBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDBFC8881DE5AA6000AEEEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDBFC88A1DE5AA6000AEEEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDBFC8751DE5AA6000AEEEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDBFC86F1DE5AA6000AEEEBB = {
+			isa = PBXGroup;
+			children = (
+				DDBFC87A1DE5AA6000AEEEBB /* MoguDemo */,
+				DDBFC8791DE5AA6000AEEEBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDBFC8791DE5AA6000AEEEBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDBFC8781DE5AA6000AEEEBB /* MoguDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDBFC87A1DE5AA6000AEEEBB /* MoguDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DDBFC87B1DE5AA6000AEEEBB /* AppDelegate.swift */,
+				DDBFC87D1DE5AA6000AEEEBB /* ViewController.swift */,
+				DDBFC87F1DE5AA6000AEEEBB /* Main.storyboard */,
+				DDBFC8851DE5AA6000AEEEBB /* Assets.xcassets */,
+				DDBFC8871DE5AA6000AEEEBB /* LaunchScreen.storyboard */,
+				DDBFC88A1DE5AA6000AEEEBB /* Info.plist */,
+				DDBFC8821DE5AA6000AEEEBB /* MoguDemo.xcdatamodeld */,
+			);
+			path = MoguDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDBFC8771DE5AA6000AEEEBB /* MoguDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDBFC88D1DE5AA6000AEEEBB /* Build configuration list for PBXNativeTarget "MoguDemo" */;
+			buildPhases = (
+				DDBFC8741DE5AA6000AEEEBB /* Sources */,
+				DDBFC8751DE5AA6000AEEEBB /* Frameworks */,
+				DDBFC8761DE5AA6000AEEEBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoguDemo;
+			productName = MoguDemo;
+			productReference = DDBFC8781DE5AA6000AEEEBB /* MoguDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDBFC8701DE5AA6000AEEEBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Zhuofan Ma";
+				TargetAttributes = {
+					DDBFC8771DE5AA6000AEEEBB = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GV4HZ53UK8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DDBFC8731DE5AA6000AEEEBB /* Build configuration list for PBXProject "MoguDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDBFC86F1DE5AA6000AEEEBB;
+			productRefGroup = DDBFC8791DE5AA6000AEEEBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDBFC8771DE5AA6000AEEEBB /* MoguDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDBFC8761DE5AA6000AEEEBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBFC8891DE5AA6000AEEEBB /* LaunchScreen.storyboard in Resources */,
+				DDBFC8861DE5AA6000AEEEBB /* Assets.xcassets in Resources */,
+				DDBFC8811DE5AA6000AEEEBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDBFC8741DE5AA6000AEEEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDBFC87E1DE5AA6000AEEEBB /* ViewController.swift in Sources */,
+				DDBFC8841DE5AA6000AEEEBB /* MoguDemo.xcdatamodeld in Sources */,
+				DDBFC87C1DE5AA6000AEEEBB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DDBFC87F1DE5AA6000AEEEBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDBFC8801DE5AA6000AEEEBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDBFC8871DE5AA6000AEEEBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDBFC8881DE5AA6000AEEEBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDBFC88B1DE5AA6000AEEEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDBFC88C1DE5AA6000AEEEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDBFC88E1DE5AA6000AEEEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GV4HZ53UK8;
+				INFOPLIST_FILE = MoguDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InCircle.MoguDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DDBFC88F1DE5AA6000AEEEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GV4HZ53UK8;
+				INFOPLIST_FILE = MoguDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.InCircle.MoguDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDBFC8731DE5AA6000AEEEBB /* Build configuration list for PBXProject "MoguDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBFC88B1DE5AA6000AEEEBB /* Debug */,
+				DDBFC88C1DE5AA6000AEEEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDBFC88D1DE5AA6000AEEEBB /* Build configuration list for PBXNativeTarget "MoguDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDBFC88E1DE5AA6000AEEEBB /* Debug */,
+				DDBFC88F1DE5AA6000AEEEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DDBFC8821DE5AA6000AEEEBB /* MoguDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DDBFC8831DE5AA6000AEEEBB /* MoguDemo.xcdatamodel */,
+			);
+			currentVersion = DDBFC8831DE5AA6000AEEEBB /* MoguDemo.xcdatamodel */;
+			path = MoguDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DDBFC8701DE5AA6000AEEEBB /* Project object */;
+}
