@@ -13,8 +13,29 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var appDelegate:AppDelegate!
 
-
+    func dropAllData() {
+        backgroundContext.perform {
+            do {
+                self.backgroundContext.reset()
+                for entity in self.persistentContainer.managedObjectModel.entities {
+                    let fetchRequest:NSFetchRequest<NSManagedObject> = NSFetchRequest()
+                    fetchRequest.entity = entity
+                    fetchRequest.fetchBatchSize = 50
+                    let fetchedResults = try self.backgroundContext.fetch(fetchRequest)
+                    for object in fetchedResults {
+                        self.backgroundContext.delete(object)
+                    }
+                }
+                try self.backgroundContext.save()
+                self.saveContext()
+            } catch {
+                print("Unable to delete data")
+            }
+        }
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
@@ -71,6 +92,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         })
         return container
+    }()
+    
+    lazy var backgroundContext: NSManagedObjectContext = {
+        let context = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
+        context.parent = self.persistentContainer.viewContext
+        return context
     }()
 
     // MARK: - Core Data Saving support

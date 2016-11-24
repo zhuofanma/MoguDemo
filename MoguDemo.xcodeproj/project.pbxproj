@@ -13,6 +13,10 @@
 		DDBFC8841DE5AA6000AEEEBB /* MoguDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDBFC8821DE5AA6000AEEEBB /* MoguDemo.xcdatamodeld */; };
 		DDBFC8861DE5AA6000AEEEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBFC8851DE5AA6000AEEEBB /* Assets.xcassets */; };
 		DDBFC8891DE5AA6000AEEEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBFC8871DE5AA6000AEEEBB /* LaunchScreen.storyboard */; };
+		DDBFC8921DE5ADDD00AEEEBB /* Datum+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFC8901DE5ADDD00AEEEBB /* Datum+CoreDataClass.swift */; };
+		DDBFC8931DE5ADDD00AEEEBB /* Datum+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFC8911DE5ADDD00AEEEBB /* Datum+CoreDataProperties.swift */; };
+		DDBFC8971DE5AED400AEEEBB /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFC8961DE5AED400AEEEBB /* APIs.swift */; };
+		DDBFC89D1DE672D000AEEEBB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBFC89C1DE672D000AEEEBB /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		DDBFC8851DE5AA6000AEEEBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDBFC8881DE5AA6000AEEEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDBFC88A1DE5AA6000AEEEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDBFC8901DE5ADDD00AEEEBB /* Datum+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Datum+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DDBFC8911DE5ADDD00AEEEBB /* Datum+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Datum+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DDBFC8961DE5AED400AEEEBB /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIs.swift; path = ../APIs.swift; sourceTree = "<group>"; };
+		DDBFC89C1DE672D000AEEEBB /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,13 @@
 		DDBFC87A1DE5AA6000AEEEBB /* MoguDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DDBFC8901DE5ADDD00AEEEBB /* Datum+CoreDataClass.swift */,
+				DDBFC8911DE5ADDD00AEEEBB /* Datum+CoreDataProperties.swift */,
 				DDBFC87B1DE5AA6000AEEEBB /* AppDelegate.swift */,
 				DDBFC87D1DE5AA6000AEEEBB /* ViewController.swift */,
 				DDBFC87F1DE5AA6000AEEEBB /* Main.storyboard */,
+				DDBFC89C1DE672D000AEEEBB /* TableViewCell.swift */,
+				DDBFC8961DE5AED400AEEEBB /* APIs.swift */,
 				DDBFC8851DE5AA6000AEEEBB /* Assets.xcassets */,
 				DDBFC8871DE5AA6000AEEEBB /* LaunchScreen.storyboard */,
 				DDBFC88A1DE5AA6000AEEEBB /* Info.plist */,
@@ -141,8 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDBFC87E1DE5AA6000AEEEBB /* ViewController.swift in Sources */,
+				DDBFC8931DE5ADDD00AEEEBB /* Datum+CoreDataProperties.swift in Sources */,
 				DDBFC8841DE5AA6000AEEEBB /* MoguDemo.xcdatamodeld in Sources */,
 				DDBFC87C1DE5AA6000AEEEBB /* AppDelegate.swift in Sources */,
+				DDBFC8971DE5AED400AEEEBB /* APIs.swift in Sources */,
+				DDBFC89D1DE672D000AEEEBB /* TableViewCell.swift in Sources */,
+				DDBFC8921DE5ADDD00AEEEBB /* Datum+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +320,7 @@
 				DDBFC88F1DE5AA6000AEEEBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
