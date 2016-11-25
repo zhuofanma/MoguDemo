@@ -47,17 +47,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             
             let closure = { (succeeded:Bool, dict:[String:String], index:Int) in
-                if succeeded {
-                    array[index].loadingStatus = .succeeded
-                    array[index].title = dict["title"]
-                    array[index].imageURL = dict["imageURL"]
-                } else {
-                    array[index].loadingStatus = .failed
-                }
-                do {
-                    try self.appDelegate.backgroundContext.save()
-                } catch {
-                    print("Error while saving backgroundContext:\(error)")
+                backgroundContext.perform {
+                    if succeeded {
+                        array[index].loadingStatus = .succeeded
+                        array[index].title = dict["title"]
+                        array[index].imageURL = dict["imageURL"]
+                    } else {
+                        array[index].loadingStatus = .failed
+                    }
+                    do {
+                        try backgroundContext.save()
+                    } catch {
+                        print("Error while saving backgroundContext:\(error)")
+                    }
                 }
             }
             
@@ -126,7 +128,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     cell.imageView?.image = UIImage(data: actualData)
                 } else {
                     cell.imageView?.image = UIImage(named: "PlaceholderImage")
-                    downloadImage(datum: datum, indexPath: indexPath)
+                    downloadImage(datum: datum, imageURL: datum.imageURL!, indexPath: indexPath)
                 }
             } else if datum.loadingStatus == .loading {
                 cell.activityIndicator.startAnimating()
@@ -176,16 +178,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             for indexPath in toBeStarted {
                 let datum = self.fetchedResultsController?.object(at: indexPath)
                 if datum?.imageData == nil && datum?.imageURL != nil {
-                    self.downloadImage(datum: datum!, indexPath: indexPath)
+                    self.downloadImage(datum: datum!, imageURL: (datum?.imageURL)!, indexPath: indexPath)
                 }
             }
         }
     }
     
-    func downloadImage(datum:Datum, indexPath:IndexPath) {
+    func downloadImage(datum:Datum, imageURL:String, indexPath:IndexPath) {
         let operation = BlockOperation {
             if self.imageQueue.isSuspended == true { return }
-            if let url = URL(string: datum.imageURL!) {
+            if let url = URL(string: imageURL) {
                 let imageData = try? Data(contentsOf: url)
                 if self.imageQueue.isSuspended == true { return }
                 self.appDelegate.persistentContainer.viewContext.perform {

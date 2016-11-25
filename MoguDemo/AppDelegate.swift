@@ -29,7 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     }
                 }
                 try self.backgroundContext.save()
-                self.saveContext()
+                self.persistentContainer.viewContext.perform {
+                    self.saveContext()
+                }
             } catch {
                 print("Unable to delete data")
             }
